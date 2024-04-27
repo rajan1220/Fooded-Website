@@ -1,0 +1,586 @@
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. Font
+2. Body and some general stuff
+3. Header
+	3.1 Logo
+	3.2 Search 
+4. Main Box
+5. About
+6. Why Choose US
+7. Our Expert Chef's
+8. Contact
+9. Footer
+10.FAQs
+11.Menu
+
+******************************/
+
+
+
+
+/***********
+1. Fonts
+***********/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Madimi+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/*********************************
+2. Body and some general stuff
+*********************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  /* For example, you could make the navigation items stack vertically */
+  .nav-list li {
+      display: block;
+  }
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/*********************************
+3. Header
+*********************************/
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background-color:rgb(153, 170, 168);
+    height: 40px;
+}
+
+.nav-list{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: end;
+}
+
+.nav-list li{
+  list-style: none;
+  padding: 26px 30px;
+  color: blue;
+}
+
+.nav-list li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family:"Ubuntu", sans-serif ;
+}
+
+.nav-list li a:hover{
+  color: orangered;
+  transform: scale(1,2);
+}
+
+/*********************************
+3.1 Logo
+*********************************/
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.logo img{
+    width: 27%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+/*********************************
+3.2 Search Bar
+*********************************/
+
+.rightnav{
+   
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+
+#background{
+    background-size: cover;
+}
+
+/*********************************
+4 Main Box
+*********************************/
+
+.firstsection{
+    height: 70vh;
+    background-image: url(https://source.unsplash.com/900x900/?indian,restaurant);
+    background-size: cover;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    max-width: 50%;
+    margin: auto;
+    height: 70%;
+}
+
+.firsthalf{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.secondhalf{
+   width: 30%;
+}
+
+.secondhalf img{
+    width: 120%;
+    padding: 4px 0;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+ }
+
+ .text-big{
+    font-size: 41px;
+ }
+ 
+ .text-small{
+    font-size: 18px;
+ }
+
+ .btn{
+    padding: 8px 20px;
+    margin: 7px 2px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    cursor: pointer;
+ }
+
+ .btn-sm{
+    padding: 5px 10px;
+    vertical-align: middle;
+ }
+
+ /*********************************
+5. About
+*********************************/
+
+ .section{
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    color: #c9c6c6;
+    font-family: "Ubuntu", sans-serif;
+ }
+
+ .left{
+    flex-direction: row-reverse;
+ }
+
+ .paras{
+    padding: 0px 65px;
+ }
+
+ .sectiontag{
+    padding: 8px 0px;
+ }
+
+ .sectionsubtag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ .sectionsubtag:hover{
+    color: #000;
+ }
+
+ .thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+ }
+
+ .thumbnail img:hover{
+    transform: scale(1.1);
+ }
+
+/*********************************
+6. Why Choose US
+*********************************/
+
+.wcu{
+    margin: 1.5em;
+}
+
+.choose{
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: 10px auto;
+    color: #c9c6c6;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.dine{
+    padding: 2em;
+    text-align: center;
+    width: 32%;
+    height: 200px;
+    border-radius: 20px;
+    border: 2px solid black;
+    justify-content: space-evenly;
+    box-shadow: gray;
+    transition: transform 1s;
+}
+
+.dine:hover{
+    transform: scale(1.1);
+    background-Color: greenyellow;
+    color: black;
+}
+
+/*********************************
+7. Our Expert Chef's
+*********************************/
+
+.chef{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#odd{
+    margin-top: 2em;
+}
+
+#even{
+    margin-bottom: 2em;
+}
+
+.expert{
+    border-radius: 20px;
+}
+
+.img1{
+    border-radius: 20px;
+    height: 22em;
+}
+
+.img1:hover{
+    box-shadow: 1px 1px 1px lightseagreen;
+    transform: scale(1.15);
+    rotate: 20px;
+}
+
+/*********************************
+8. Contact
+*********************************/
+
+.contact{
+  background-color: #c9c6c6;
+  height: 500px;
+}
+
+.text-center{
+  text-align: center;
+  margin: 0px;
+  font-family: "Playfair Display", serif;;
+  font-size: 35px;
+}
+
+.form{
+  max-width: 500px;
+  margin: 42px auto;
+}
+
+.form-input{
+  margin-top: 14px 0;
+  padding: 5px 3px;
+  width: 100%;
+  font-size: 19px;
+  border: 2px solid gray;
+  border-radius: 6px;
+}
+
+.btn-bt{
+  border: 2px solid gray;
+  text-align: center;
+  color: black;
+}
+
+.btn-bt:hover{
+  color: blue;
+  background-Color: greenyellow;
+}
+
+/*********************************
+9. Footer
+*********************************/
+
+.social{
+    justify-content: space-evenly;
+}
+
+.foot-sec {
+    height: 150px;
+    background-color: rgb(140, 131, 131);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  
+  .foot-sec .main-txt-box {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .foot-sec .main-txt-box .txt1 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    padding: 20px;
+  }
+  
+  .foot-sec .main-txt-box .txt1 .social i {
+    font-size: 100px;
+  }
+  
+  .foot-sec .main-txt-box .txt2 {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    padding: 20px;
+  }
+  
+  .foot-sec .main-txt-box .txt2 .item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  
+  .foot-sec .main-txt-box .txt2 .item a {
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+  }
+
+  .foot-sec .main-txt-box .txt2 .item a:hover{
+    color: aqua;
+    transform: scale(1,1);
+  }
+  
+  .foot-sec .main-txt-box .txt3 {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    padding: 20px;
+  }
+  
+  .foot-sec .main-txt-box .txt3 .item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  
+  .foot-sec .main-txt-box .txt3 .item a {
+    text-decoration: none;
+    color: rgb(18, 7, 7);
+  }
+
+  .foot-sec .main-txt-box .txt3 .item a:hover{
+    color: aqua;
+    transform: scale(1,1);
+  }
+  
+  .foot-sec .main-txt-box .txt4 {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    padding: 0px;
+  }
+  
+  .foot-sec .main-txt-box .txt4 .sub input {
+    width: 15vw;
+    height: 3vw;
+    padding-left: 20px;
+    border-radius: 20px;
+  }
+  
+  .foot-sec .main-txt-box .txt4 p {
+    color: rgb(16, 1, 1);
+  }
+  
+  .foot-sec .main-txt-box .txt4 .sub i {
+    background: rgb(8, 228, 63);
+    border: 1px solid;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  .foot-sec .main-txt-box .txt4 .sub i:hover{
+    transform: scale(1.15);
+  }
+
+   /*  Coppright  */
+
+  .text-footer{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font: "Ubuntu", sans-serif;
+    background-color: rgb(19, 17, 17);
+  }
+
+  /*********************************
+10. FAQs & privacy
+*********************************/
+
+  .faqs{
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .faqs-text{
+    padding-left: 90px;
+    padding-top: 20px;
+    font-size: 1em;
+  }
+
+  .text-faqs{
+    padding-left: 120px;
+  }
+
+  /*10.  privacy Section*/
+
+  .privacy{
+    text-align: center;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  .policy{
+    text-align: center;
+  }
+
+  /*********************************
+11. Menu
+*********************************/
+
+  .menu1{
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    font-size: 1.5em;
+    border: 2px solid black;
+    border-right: none;
+  }
+
+  .menu{
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    font-size: 1.5em;
+    background-color: rgb(35, 32, 32);
+    color: white;
+  }
+
+  .menu-footer{
+    width: 100%;
+  }
+
+  .menubar{
+    display: flex;
+    justify-content: center;
+  }
+
+  .Item{
+    text-align: center;
+    background-color: rgb(237, 144, 5);
+    font-family: "Madimi One", sans-serif;
+    font-weight: bolder;
+    border-radius: 80px;
+  }
+
+  .online{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-right: 150px;
+    padding-left: 150px;
+    font-size: 1.5em;
+  }
+
+  .order{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .order tr,.order table{
+    width: 100%;
+  }
+
+  .order table{
+    margin-left: 15.7em;
+    margin-right: 14.1em;
+  }
+
+  .order td{
+    width: 17%;
+    font-size: 1.2em;
+  }
+
+  .download{
+    background-color: rgb(48, 226, 16);
+    text-decoration: none;
+  }
